@@ -24,7 +24,6 @@ public class VehicleInventory {
   
 	
   public List<Vehicle> DisplayRandomVehicles(int count) {
-		
   	//A safe method of writing that prevents disrupting the original rows order
   	return vehicles;
   	
