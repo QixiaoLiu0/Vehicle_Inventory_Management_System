@@ -20,9 +20,9 @@ public class Menu extends MenuComponent {
 
 	@Override 
 	public void display() {
-			for (int i = 0; i < options.size(); i++) {
-         System.out.println(options.get(i).getDescription());
-    	}
+		for (int i = 0; i < options.size(); i++) {
+			System.out.println(options.get(i).getDescription());
+    }
 	}
 
 	@Override

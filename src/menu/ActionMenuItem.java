@@ -18,7 +18,6 @@ public class ActionMenuItem extends MenuComponent {
 	@Override
 	public void execute(VehicleInventory inventory, Scanner scanner) {
 		this.action.execute(inventory, scanner);
-		
 	}
 
 	
