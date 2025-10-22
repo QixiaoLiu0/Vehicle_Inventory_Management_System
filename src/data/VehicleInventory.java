@@ -1,9 +1,13 @@
 package data;
 
-import java.util.*;
+import java.util.*; 
 import java.io.*;
 
-
+import problemDomain.Hatchback;
+import problemDomain.Hybrid;
+import problemDomain.PickupTruck;
+import problemDomain.SUV;
+import problemDomain.Sedan;
 import problemDomain.Vehicle;
 
 
@@ -15,7 +19,44 @@ public class VehicleInventory {
 	}
 	
   public void loadFromFile() {
-    
+    try {
+    	File file = new File(fileName);
+      Scanner fileScanner = new Scanner(file);
+      
+      while (fileScanner.hasNextLine()) {
+    	  String line = fileScanner.nextLine().trim();
+    	  if (line.isEmpty()) continue;
+    	  
+    	  String [] arr = line.split(";");
+    	  char firstChar = arr[0].charAt(0);
+    	  int carType = Character.getNumericValue(firstChar);
+    	  
+    	  
+    	  switch (carType) {
+    	  	case 1:
+    	  		vehicles.add(new Sedan(arr));
+    	  		break;
+    	  	case 2:
+    	  		vehicles.add(new Hatchback(arr));
+    	  		break;
+    	  	case 3:
+    	  		vehicles.add(new SUV(arr));
+    	  		break;
+    	  	case 4:
+    	  	case 5:
+    	  		vehicles.add(new Hybrid(arr));
+    	  		break;
+    	  	case 6:
+    	  		vehicles.add(new PickupTruck(arr));
+    	  		break;
+    	  	default:
+    	  		break;
+    	  }
+      }
+    	
+    }catch (FileNotFoundException e) {
+    	System.out.println("File not found: " + fileName);
+    }
   }
   
   public boolean PurchaseVehicle(String carId) {
@@ -24,7 +65,6 @@ public class VehicleInventory {
   
 	
   public List<Vehicle> DisplayRandomVehicles(int count) {
-  	//A safe method of writing that prevents disrupting the original rows order
   	return vehicles;
   	
   }
