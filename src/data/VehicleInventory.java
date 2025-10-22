@@ -60,7 +60,21 @@ public class VehicleInventory {
   }
   
   public boolean PurchaseVehicle(String carId) {
-		return false;
+	  for (Vehicle v : vehicles) {
+		  if (v.getCarID().equals(carId)) {
+			  if (v.getQuantity() > 0 ) {
+				  v.setQuantity(v.getQuantity() - 1 );
+				  saveToFile();
+				  System.out.println("The vehicle \"" + v.getVehicleType() + " "+ v.getSubtype() + "\"has been ppurchased.");
+				  return true;
+			  }else {
+				  System.out.println("Insufficient stock");
+				  return false;
+			  }
+		  }
+	  }
+	  System.out.println("not found");
+	  return false;
   }
   
 	
