@@ -115,7 +115,15 @@ public class VehicleInventory {
   }
   
   public List<Vehicle> DisplayHatchbackByType(char hatchType){
-		return vehicles;
+  	List<Vehicle> hatchBackResult = new ArrayList<>();
+  	for (Vehicle v : this.vehicles) {
+  		if(v instanceof Hatchback) {
+  			if (((Hatchback)v).getHatchType() == hatchType) {
+  				hatchBackResult.add(v);
+  	  	}
+  		}
+  	}
+		return hatchBackResult;
   }
   
   public List<Vehicle> DisplaySUVByDrivetrain(String drivetrain){
