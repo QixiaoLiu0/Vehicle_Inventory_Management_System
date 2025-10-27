@@ -27,5 +27,5 @@ public class Hybrid extends Vehicle {
 	public int getElectricRange() {
 		return electricRange;
 	}
- 
+
 }
