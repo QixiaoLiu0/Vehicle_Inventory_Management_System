@@ -140,17 +140,24 @@ public class VehicleInventory {
   }
   
   
-  public List<Vehicle> DisplayHybridByPowerTrain(String powerTrain){
-  	List<Vehicle> hybridResult = new ArrayList<>();
-  	for (Vehicle v : this.vehicles) {
-  		if(v instanceof Hybrid) {
-  			if (((Hybrid)v).getPowerTrain().equals(powerTrain)) {
-  				hybridResult.add(v);
-    	  }
-  		}
-  		
-  	}
-		return hybridResult;
+  public List<Vehicle> DisplayHybridByPowerTrain(String powerTrain) {
+    List<Vehicle> hybridResult = new ArrayList<>();
+
+    if (this.vehicles == null) {
+        return hybridResult;
+    }
+
+    for (Vehicle v : this.vehicles) {
+        if (v instanceof Hybrid) {
+            String pt = ((Hybrid) v).getPowerTrain();
+
+            if (pt != null && pt.trim().equalsIgnoreCase(powerTrain.trim())) {
+                hybridResult.add(v);
+            }
+        }
+    }
+
+    return hybridResult;
   }
   
   

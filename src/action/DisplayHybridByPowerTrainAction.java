@@ -1,12 +1,10 @@
 package action;
 
-
 import java.util.List;
 import java.util.Scanner;
 
 import data.VehicleInventory;
 import problemDomain.Vehicle;
-
 
 public class DisplayHybridByPowerTrainAction implements Action {
 

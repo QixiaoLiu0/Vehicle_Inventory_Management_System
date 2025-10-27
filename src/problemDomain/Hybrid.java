@@ -8,14 +8,16 @@ public class Hybrid extends Vehicle {
 
   public Hybrid(String[] arr) {
     super(arr);
-    this.powerTrain = arr[10];
+    this.powerTrain = arr[10].trim();
     this.electricRange = Integer.parseInt(arr[11]);
   }
 	
 	
 	@Override
 	public String toString() {
-		return "";
+		return super.toString() +
+				"\nPower Train:\t" + powerTrain +
+				"\nElectric Range:\t " + electricRange;
 	}
 
 

@@ -6,7 +6,7 @@ public class Sedan extends Vehicle {
 	
   public Sedan(String[] arr) {
     super(arr);
-//    this.trunkSize = arr[10].charAt(0);
+    this.trunkSize = arr[10].charAt(0);
   }
 	
 	
@@ -23,7 +23,8 @@ public class Sedan extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "";
+		return super.toString() +
+				"\nTrunk Size:\t" + trunkSize;
 	}
 
 }
