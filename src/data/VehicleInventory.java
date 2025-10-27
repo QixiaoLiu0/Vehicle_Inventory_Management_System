@@ -102,8 +102,16 @@ public class VehicleInventory {
 
   
   public List<Vehicle> DisplaySedanByFormat(char trunkSize){
-		return vehicles;
-
+  	List<Vehicle> sedanResult = new ArrayList<>();
+  	for (Vehicle v : this.vehicles) {
+  		if(v instanceof Sedan) {
+  			if (((Sedan)v).getTrunkSize() == trunkSize) {
+  				sedanResult.add(v);
+  	  	}
+  		}
+  		
+  	}
+		return sedanResult;
   }
   
   public List<Vehicle> DisplayHatchbackByType(char hatchType){
