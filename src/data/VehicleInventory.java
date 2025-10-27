@@ -141,7 +141,16 @@ public class VehicleInventory {
   
   
   public List<Vehicle> DisplayHybridByPowerTrain(String powerTrain){
-		return vehicles;
+  	List<Vehicle> hybridResult = new ArrayList<>();
+  	for (Vehicle v : this.vehicles) {
+  		if(v instanceof Hybrid) {
+  			if (((Hybrid)v).getPowerTrain().equals(powerTrain)) {
+  				hybridResult.add(v);
+    	  }
+  		}
+  		
+  	}
+		return hybridResult;
   }
   
   
