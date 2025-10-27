@@ -1,0 +1,161 @@
+[33mcommit 8ef177d038d336adef927458f0cc0e36cb500c4d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mEdan/DisplayAndData[m[33m, [m[1;31morigin/Edan/DisplayAndData[m[33m)[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Sun Oct 26 21:27:13 2025 -0600
+
+    text
+
+[33mcommit 1e28f346b54cdb148f0512847588b666562cf0c5[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Sun Oct 26 19:10:11 2025 -0600
+
+    Fix Hybrid
+
+[33mcommit 59e44329adea589890b2ad62a2469f0943f6556f[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Sun Oct 26 18:45:23 2025 -0600
+
+    Save file
+
+[33mcommit dec730387f810846ae7257764a9b238962077139[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Sun Oct 26 18:42:53 2025 -0600
+
+    Add pickup by Cargo
+
+[33mcommit 3d388ef1a818f2b5e464575cfa9911738e7b167d[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Sun Oct 26 18:42:09 2025 -0600
+
+    Add Hybrid by Power Train
+
+[33mcommit aae3865d8e0bc6c3ba11b87032d7751b51e58dcc[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Sun Oct 26 18:41:16 2025 -0600
+
+    ADd SUV by Drivetrain
+
+[33mcommit 4e18c6776f3673878c0fb41c32556ecc465de6e0[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Sun Oct 26 18:38:45 2025 -0600
+
+    Add DisplayHatchbackByType
+
+[33mcommit 07ec0945611a6eb5d2186829207a8993bade6231[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Sun Oct 26 18:37:32 2025 -0600
+
+    Add DisplaySedanByFormat
+
+[33mcommit 1f4a6c39f6386b1a0ed41cab8f33b908b0d90af2[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Sun Oct 26 18:36:43 2025 -0600
+
+    Add DispllayVehiclesByType
+
+[33mcommit fb11a2ae40d33fa0c057df1b525d69c597dbefb0[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Sun Oct 26 18:34:30 2025 -0600
+
+    Add DisplayRandomVehicles
+
+[33mcommit f0d547550fa12b557bd20d4989250c5aa10b2c83[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Wed Oct 22 17:37:15 2025 -0600
+
+    add VehicleInventory - PurchaseVehicle
+
+[33mcommit 0dba4f22831d073ea3af4ccbb7ba6c88a9f4fc3d[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Wed Oct 22 17:18:14 2025 -0600
+
+    Add VehiclenInventory - Load From File
+
+[33mcommit 78dc5fe478a1305f4305805718bdc816888347c1[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Wed Oct 22 16:31:17 2025 -0600
+
+    add Display Vehicles By Type Action
+
+[33mcommit 9b82d5cd54d283dcb6774334599300d8d62e076f[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Wed Oct 22 16:24:16 2025 -0600
+
+    fix import Vehicle
+
+[33mcommit f3e3bd1c6df161f83be97a0705d06a548e5931d1[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Wed Oct 22 16:22:37 2025 -0600
+
+    add Display RandomVehicles Action
+
+[33mcommit 4e850809d101c286117ab7620e3e83442c767a69[m
+Author: Tianao0110 <edan0110@gmail.com>
+Date:   Wed Oct 22 16:06:08 2025 -0600
+
+    Add hybridpowertrain, list and for powertrainhybrid
+
+[33mcommit 5daef8399cc3bf66064fc751243381b681ca6e0e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Qixiao Liu <christal.liu008@gmail.com>
+Date:   Mon Oct 20 13:01:33 2025 -0600
+
+    add cars class skeleton
+
+[33mcommit 931b0726551d0b9e51c50b7ddead16b48deb976b[m
+Author: Qixiao Liu <christal.liu008@gmail.com>
+Date:   Mon Oct 20 09:55:55 2025 -0600
+
+    created res foloder and uploaded vehicle.txt file
+
+[33mcommit ceff5ada22a3483d6addced9ba76a0ea55b6941e[m
+Author: Qixiao Liu <christal.liu008@gmail.com>
+Date:   Mon Oct 20 09:54:34 2025 -0600
+
+    complete App & Navigator function logic
+
+[33mcommit d1f11ddfb6c24ee86e5e27e84490df32116123cb[m
+Author: Qixiao Liu <christal.liu008@gmail.com>
+Date:   Mon Oct 20 09:45:07 2025 -0600
+
+    skeleton format
+
+[33mcommit dfc147bf5932c50ced4d21b7fa435c947b5af707[m
+Author: Qixiao Liu <christal.liu008@gmail.com>
+Date:   Mon Oct 20 09:35:17 2025 -0600
+
+    add App & Navigator skeleton
+
+[33mcommit 6cebfc36fa19289b07285299e974ede202397e61[m
+Author: Qixiao Liu <christal.liu008@gmail.com>
+Date:   Mon Oct 20 04:11:11 2025 -0600
+
+    project skeleton
+
+[33mcommit 47e19869de7dbfc84cfdb86b7d1a4d8a0908c210[m
+Author: Qixiao Liu <christal.liu008@gmail.com>
+Date:   Sun Oct 19 04:57:00 2025 -0600
+
+    Add placeholder file for src directory
+
+[33mcommit c70a946ba6b052c26f4332d32c25d3197b7153a1[m
+Author: Qixiao Liu <christal.liu008@gmail.com>
+Date:   Sun Oct 19 04:45:57 2025 -0600
+
+    Clean up repo and apply .gitignore rules
+
+[33mcommit d0c73e73faef614a30a910cfeb8b263b735b6b9e[m
+Author: Qixiao Liu <christal.liu008@gmail.com>
+Date:   Sun Oct 19 04:42:33 2025 -0600
+
+    init java project
+
+[33mcommit 972eeb1ec389e6e9c942c31a2d74b9ce615d13c0[m
+Author: Qixiao Liu <christal.liu008@gmail.com>
+Date:   Sun Oct 19 04:28:18 2025 -0600
+
+    push README.md
+
+[33mcommit 446f7a5b412a1a646ca1c2d896aac5ff70ea9b8b[m
+Author: Qixiao Liu <christal.liu008@gmail.com>
+Date:   Sun Oct 19 01:54:00 2025 -0600
+
+    init commit
