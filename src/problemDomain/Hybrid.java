@@ -8,8 +8,8 @@ public class Hybrid extends Vehicle {
 
   public Hybrid(String[] arr) {
     super(arr);
-//    this.powerTrain = arr[10];
-//    this.electricRange = Integer.parseInt(arr[11]);
+    this.powerTrain = arr[10];
+    this.electricRange = Integer.parseInt(arr[11]);
   }
 	
 	
