@@ -7,8 +7,8 @@ public class PickupTruck extends Vehicle {
 
   public PickupTruck(String[] arr) {
     super(arr);
-//    this.cargoBeds = arr[10];
-//    this.cargoCapacity = Integer.parseInt(arr[11]);
+    this.cargoBeds = arr[10];
+    this.cargoCapacity = Integer.parseInt(arr[11]);
   }
 
 	
@@ -27,7 +27,9 @@ public class PickupTruck extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "";
+		return super.toString() +
+				"\nCargo Capacity:\t" + cargoCapacity +
+				"\nCargo Beds:\t" + cargoBeds;
 		
 	}
 }
