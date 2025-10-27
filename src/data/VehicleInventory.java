@@ -90,9 +90,16 @@ public class VehicleInventory {
 
   
   public List<Vehicle> DisplayVehiclesByType(String vehicleType){
-		return vehicles;
-		
+  	List<Vehicle> vehiclesResult = new ArrayList<>(); 
+  	for (Vehicle v : this.vehicles) {
+  		 if (v.getVehicleType().equalsIgnoreCase(vehicleType.trim())) {
+  			 vehiclesResult.add(v);
+  		 }
+  	}
+  	
+	return vehiclesResult;
   }
+
   
   public List<Vehicle> DisplaySedanByFormat(char trunkSize){
 		return vehicles;
