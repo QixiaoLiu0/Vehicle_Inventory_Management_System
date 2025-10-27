@@ -79,9 +79,15 @@ public class VehicleInventory {
   
 	
   public List<Vehicle> DisplayRandomVehicles(int count) {
-  	return vehicles;
+  	List<Vehicle> vehiclesCopy = new ArrayList<>(vehicles);
+  	Collections.shuffle(vehiclesCopy);
+  	if (count > vehiclesCopy.size()) {
+  		count = vehiclesCopy.size();
+  	}
+    return vehiclesCopy.subList(0, count);
   	
-  }
+  }	  
+
   
   public List<Vehicle> DisplayVehiclesByType(String vehicleType){
 		return vehicles;
