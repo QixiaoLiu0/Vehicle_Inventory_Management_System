@@ -155,8 +155,16 @@ public class VehicleInventory {
   
   
   public List<Vehicle> DisplayPickupByCargo(String cargoBeds){
-		return vehicles;
-
+  	List<Vehicle> pickupResult = new ArrayList<>();
+  	for (Vehicle v : this.vehicles) {
+  		if(v instanceof PickupTruck) {
+  			if (((PickupTruck)v).getCargoBeds().equals(cargoBeds)) {
+  				pickupResult.add(v);
+    	  }
+  		}
+  		
+  	}
+		return pickupResult;
   }
   
   
