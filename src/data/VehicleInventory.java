@@ -127,8 +127,16 @@ public class VehicleInventory {
   }
   
   public List<Vehicle> DisplaySUVByDrivetrain(String drivetrain){
-		return vehicles;
-
+  	List<Vehicle> suvResult = new ArrayList<>();
+  	for (Vehicle v : this.vehicles) {
+  		if(v instanceof SUV) {
+  			if (((SUV)v).getDrivetrain().equals(drivetrain)) {
+    			suvResult.add(v);
+    	  }
+  		}
+  		
+  	}
+		return suvResult;
   }
   
   
