@@ -171,8 +171,49 @@ public class VehicleInventory {
   
   
 	public boolean saveToFile() {
-		return false;
+		File file = new File(fileName);
 
+    try (PrintWriter writer = new PrintWriter(file)) {
+        for (Vehicle v : vehicles) {
+            // common 10 git 
+            StringBuilder line = new StringBuilder();
+            line.append(v.getCarID()).append(";")
+                .append(v.getVehicleType()).append(";")
+                .append(v.getSubtype()).append(";")
+                .append(v.getSpeed()).append(";")
+                .append(v.getFuel()).append(";")
+                .append(v.getSeats()).append(";")
+                .append(v.getYear()).append(";")
+                .append(v.getDrivetrain()).append(";")
+                .append(v.getPrice()).append(";")
+                .append(v.getQuantity());
+
+            // extra 
+            if (v instanceof Sedan) {
+                Sedan s = (Sedan) v;
+                line.append(";").append(s.getTrunkSize());
+            } else if (v instanceof Hatchback) {
+                Hatchback h = (Hatchback) v;
+                line.append(";").append(h.getHatchType());
+            } else if (v instanceof Hybrid) {
+                Hybrid h = (Hybrid) v;
+                line.append(";").append(h.getPowerTrain())
+                    .append(";").append(h.getElectricRange());
+            } else if (v instanceof PickupTruck) {
+                PickupTruck t = (PickupTruck) v;
+                line.append(";").append(t.getCargoBeds())
+                    .append(";").append(t.getCargoCapacity());
+            }
+
+            writer.println(line);
+        }
+
+        return true;
+
+    } catch (IOException e) {
+        System.out.println("Error saving vehicles: " + e.getMessage());
+        return false;
+    }
 	}
 	
 	
